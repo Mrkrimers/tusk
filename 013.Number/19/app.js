@@ -14,13 +14,17 @@ console.log('ДИСКРИМИНАНТ! ' + D);
 if (D < 0) {
     console.log('нет корней');
     alert('нет корней');
+    
 } else if (D == 0) {
     const x = -b / 2 * a;
+
     console.log('один корень ' + x);
     alert('один корень ' + x);
+
 } else {
     const x1 = ((-b + Math.sqrt(D)) / (2 * a));
     const x2 = ((-b - Math.sqrt(D)) / (2 * a));
+
       if (x1 > x2) {
         console.log('первый корень ' + x1);
         alert('первый корень ' + x1);
