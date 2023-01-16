@@ -4,5 +4,14 @@
 // • Найдите индекс 2 подстроки
 
 
+const str = 'sasha yar dev';
+console.log(str.indexOf(' '));
+console.log(str.lastIndexOf(' '));
+console.log(str.length);
 
+
+if (isNaN(str)) {
+    console.log(str.split(' ').slice(0, 1));
+
+} else console.log('error');
 

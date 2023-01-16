@@ -3,11 +3,16 @@
 
 
 
-const str = prompt('ВАШЕ СЛОВО');
+// const str = prompt('ВАШЕ СЛОВО');
+let s = 'sasha vladimir'
+let a = 'js'
 
 
-if (isNaN(str)) {
-    console.log(`ваше слово имеет ${str.length} значений`);
+console.log(`ваше слово ${s} ${a}`);
 
-} else console.log('введите слово');
+
+// if (isNaN(str)) {
+//     console.log(`ваше слово имеет ${str.length} значений`);
+
+// } else console.log('введите слово');
 
