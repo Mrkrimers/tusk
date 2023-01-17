@@ -1,18 +1,22 @@
 // 20.Пользователь вводит строку. Необходимо посчитать количество гласных
 
 
-
-let str = 'я учу javascript !'.split(' ');
+// let str = prompt('');
+let str = 'I am learning javascript !'.toLocaleLowerCase();
 alert(str); // просто проверка
-console.log(`у вас в строке ${str.length} слов(\а)`); // 1-ый способ
+let count = 0;
 
+for (let i = 0; i < str.length; i++) {
+    const byk = str[i];
+    // console.log(byk);
 
-for (let a = 0; a < str.length; a++) {
-    const element = str[a]
-    console.log(element);
+    if (byk == 'a' || byk == 'e' || byk == 'i' || byk == 'o' || byk == 'u' || byk == 'y') {
+        count += 1;
+    }
+
 }
 
-
+console.log(`гласных в нашей строке ${count}`);
 
 
 

@@ -5,12 +5,11 @@
 
 
 
-let arr = ['я', 'учу', 'javascript', '!'];
-alert(arr);
+const str = prompt('').split(' ');
 
 
-console.log(arr.join('+'));
+if (str.includes('good'.toLowerCase()) || str.includes('good'.toUpperCase())){
+    console.log(true);
+} else console.log(false);
 
-
-18. Дан массив. Вывести каждый отдельный элемент в консоль (for)
 

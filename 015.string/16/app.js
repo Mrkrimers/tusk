@@ -5,14 +5,14 @@
 // chris alan => false
 
 
+// let str = prompt('').split(' ');
+let str = 'Sasha Yarmosh'.split(' ');
 
-let arr = ['я', 'учу', 'javascript', '!'];
-alert(arr);
+console.log(str[0]);
 
+console.log(str[0][0]); // проверяю индексы...
 
-console.log(arr.join('+'));
+if (str[0][0] == str[0][0].toUpperCase() && str[1][0] == str[1][0].toUpperCase()) {
+    console.log(true);
+} else console.log(false);
 
-17. На вход программе подается строка текста. Напишите программу, которая
-определяет является ли строка хорошей. Текст хороший, если содержит
-подстроку «хорош» во всевозможных регистрах.
-я очень хороший текст => true

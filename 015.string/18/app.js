@@ -1,7 +1,6 @@
 // 18. Дан массив. Вывести каждый отдельный элемент в консоль (for)
 
 
-
 let arr = ['я', 'учу', 'javascript', '!'];
 alert(arr);
 console.log(arr.length);

@@ -10,11 +10,9 @@ console.log(`у вас в строке ${str.length} слов(\а)`); // 1-ый 
 
 
 for (let a = 0; a < str.length; a++) {
-    const element = str[a]
-    console.log(element);
+    // const element = [a];
+    console.log(`${a + 1} слово`);
 }
-
-
 
 
 

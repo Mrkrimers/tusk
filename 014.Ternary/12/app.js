@@ -4,13 +4,25 @@
 
 
 
-const a = +prompt('введите трехзначное число');
+let a = prompt('введите трехзначное число'); // ОБЯЗАТЕЛЬНО СТРОКА!!!
+let arr = a.split('');
 
 
-if (!isNaN(a)) {
-кцрцкрцр
-    console.log((Math.floor(a / 100)));
-    alert(Math.floor(a / 100));
-рцрцур
-} else console.log('NaN');
+console.log(a[0]);
+console.log(a[1]);
+console.log(a[2]);
 
+if (a > 99 && a < 1000) {
+    // let x = +a[0];
+    // let b = +a[1];
+    // let c = +a[2];
+
+    // console.log(x + b + c);
+
+    console.log(+a[0] + +a[1] + +a[2]); // ОБЯЗАТЕЛЬНО ПРЕОБРАЗОВАТЬ В ЧИСЛА 
+    console.log(+a[0] * +a[1] * +a[2]);
+
+} else console.log(false);
+
+
+// медот for
