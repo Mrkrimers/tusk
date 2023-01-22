@@ -11,3 +11,8 @@ for (let i = 0; i < str.length; i++) {
 
 }
 console.log(count);
+
+
+// const str = 'test test';
+
+// console.log(str[0].toUpperCase() + str.slice(1, 4) + ' ' + str[5].toUpperCase() + str.slice(6));

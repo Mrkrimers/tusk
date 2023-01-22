@@ -2,8 +2,8 @@
 // введенные значения анаграммами
 
 
-let str_1 = 'pila'.split('');
-let str_2 = 'lipa'.split('');
+let str_1 = 'sasha'.split('');
+let str_2 = 'hasas'.split('');
 
 
 if (str_1.sort().join('') === str_2.sort().join('')) {

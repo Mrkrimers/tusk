@@ -1,20 +1,20 @@
 // 14. На вход число. Необходимо вывести все числа от 1 до введенного числа. Добавить
 // проверку вводимого значения, если это текст –> сообщение об ошибке
 
-const num = prompt();
-// const num = 6;
+// const num = +prompt();
+const num = 7;
 
 
-for (let i = 1; i <= num; i++) {
 
-    if (!isNaN(i)) {
+
+if (!isNaN(num)) {
+
+    for (let i = 1; i <= num; i++) {
+
         console.log(i);
-    } else console.log('NaN');
-}
 
-
-
-
+    }
+} else console.log(NaN);
 
 
 
