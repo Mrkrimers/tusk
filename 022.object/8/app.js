@@ -3,9 +3,18 @@
 
 const obj = {
 
-name:''
-age: ''
-
+    name: '',
+    age: '32',
+    height: '187',
 }
 
-let 
+let count = 0;
+
+for (let key in obj) {
+
+    if (key && obj[key]) {
+        count++
+    }
+
+}
+console.log(count);
