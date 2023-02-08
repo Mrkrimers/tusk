@@ -7,7 +7,7 @@ const n = 5;
 
 function doArr(n_) {
     const arr = [];
-    for (let i = 0; i < n; i++) {
+    for (let i = 0; i < n_; i++) {
         arr.push(prompt());
     }
 
