@@ -6,36 +6,51 @@
 // массива
 
 
-const num = 5;
+const n = 5;
 
-function doArr(num_) {
+function array(n_) {
     let arr = [];
-    for (let i = 0; i < num_; i++) {
-        arr.push(+prompt());
+    let promp = 2;
+    for (let i = 0; i < n_; i++) {
+        // let promp = prompt();
+        arr.push(promp);
+
     }
     return arr;
 }
 
 function isValid(arr_) {
-    for (let i = 0; i < arr_.length; i++)
-        if (typeof arr[i] == 'number') {
-            return true;
-        }
 
-    return true
+    for (let i = 0; i < arr_.length; i++) {
+
+        return typeof (arr[i]) ? true : false;
+
+        // if (typeof (arr[i]) == 'number') {
+        //     return true;
+        // } else false
+
+    }
+    return true;
 }
 
 
-function multiply(arr_) {
+function mult(arr_) {
+
     const bool = isValid(arr);
-
+    console.log(bool);
+    // let result = arr_.reduce(function (sum, el) {
+    //     return sum * el
+    // }, 1);
     if (bool == true) {
-        let res = arr_.reduce((sum, el) => sum * el, 1);
-        return res;
-    } else return 'error'
+
+        let result = arr_.reduce((sum, el) => sum * el, 1);
+        return result;
+
+    } else 'error'
 }
 
 
-const arr = doArr(num);
-const res = multiply(arr);
+const arr = array(n);
+const res = mult(arr);
+
 console.log(res);
