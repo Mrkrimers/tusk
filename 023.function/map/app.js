@@ -1,20 +1,9 @@
-const n = 3;
-let arr = [];
+function mul(arr) {
 
-for (let i = 0; i < n; i++) {
-    arr.push('sas');
+    const sum = arr.reduce((res, a) => res * a, 1)
+    console.log(sum);
+    return sum;
+    
 }
 
-// let newArr = [];
-// arr.forEach(function (el) {
-//     newArr.push(`#${el}`)
-
-// })
-// console.log(newArr);
-
-let newArr = arr.map(function (el) {
-
-    return `# ${el}`
-})
-
-console.log(newArr);
+console.log(mul([1, 2, 3]));
