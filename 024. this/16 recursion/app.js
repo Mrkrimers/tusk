@@ -2,25 +2,20 @@
 
 const arr = [1, 2, 3, 4, 5];
 
-function sumArr(arr_) {
+console.log(arr.length);
+console.log(arr.length - 1);
 
-    if (arr_[arr_.length]) return arr_[arr_.length]
+function sum(arr_, number) {
 
-    for (let i = 0; i < arr_.length; i++) {
+    if (number == 0) return arr_[number]
 
-
-    }
-
-
-    return arr_[0] + sumArr(arr_[arr_.length - 1])
+    return arr_[number] + sum(arr_, number - 1)
 
 }
 
 
-const result = sumArr(arr);
+const result = sum(arr, arr.length - 1)
 console.log(result);
-
-
 
 
 
