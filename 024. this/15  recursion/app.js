@@ -7,7 +7,7 @@ const num = 5;
 
 function faktorial(num_) {
 
-    if (num_ == 1) return num_
+    if (num_ == 1) { return num_ }
 
     return num_ * faktorial(num_ - 1)
 
@@ -16,7 +16,6 @@ function faktorial(num_) {
 const result = faktorial(num);
 console.log(typeof result);
 console.log(result);
-
 
 
 
