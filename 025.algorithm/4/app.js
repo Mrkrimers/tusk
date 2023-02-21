@@ -7,30 +7,33 @@
 
 
 
-const n = 1;
-const num = 3;
-
+const n = 6;
+const count = 0;
 const array = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233]
 
 
-function search(arr_, n_, num_) {
 
-    if (n_ == num_) { return arr_[n_] }
 
-    return search(arr_, n_ + 1, num_)
+
+// function search(arr_, n_) {
+
+//     if (n_ == 1) return arr_[n_]
+
+//     return search(arr_, n_ - 1)
+
+// }
+
+// let result = search(array, n)
+// console.log(result);
+
+
+
+function search(arr, cou, num) {
+
+    if (cou == num) { return arr[num - 1] }
+
+    return search(arr, cou + 1, num)
 }
 
-
-const result = search(array, n, num)
+let result = search(array, count, n);
 console.log(result);
-
-
-
-
-
-
-
-
-
-
-
