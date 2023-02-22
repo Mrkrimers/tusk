@@ -12,7 +12,7 @@ function isValid(arr_) {
         if (!Array.isArray(arr_)) throw new Error('NOT ARRAY')
 
         for (let i = 0; i < arr_.length; i++) {
-            if (isNaN(arr_[i])) throw new Error(`It letter ${arr_[i]}`)
+            if (isNaN(arr_[i])) throw new Error(`It's letter ${arr_[i]}`)
         }
 
         let newArr = arr_.filter(function (el) {
