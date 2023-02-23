@@ -49,4 +49,3 @@ let OK = sum(myArray)
 console.log(OK);
 
 
-
