@@ -4,18 +4,24 @@
 
 
 
-const btnLock = document.querySelector(`lock`);
+const btnLock = document.querySelector(`button.lock`);
 const btnUnlock = document.getElementById(`unlock`);
 
 
+btnLock.addEventListener(`click`, () => {
+
+    let inp = document.querySelector(`input`);
+    inp.setAttribute(`readonly`, `readonly`);
+
+})
 
 
+btnUnlock.addEventListener(`click`, () => {
 
+    let inp = document.querySelector(`input`);
+    inp.removeAttribute(`readonly`);
 
-
-
-
-
+})
 
 
 
