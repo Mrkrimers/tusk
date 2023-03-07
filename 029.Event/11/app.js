@@ -12,16 +12,6 @@ btn.addEventListener(`click`, () => {
     console.log(inpFirst);
 
 
-    if (flag == true) {
-        inpFirst.value = inpSecond.value;
-        // inpSecond.value = inpFirst.value;
-        flag = false
-    } else {
-        inpFirst.value = inpSecond.value;
-        // inpSecond.value = inpFirst.value;
-        flag = true;
-    }
-
 
 
 })

@@ -6,7 +6,7 @@
 document.querySelector(`.btn`).addEventListener(`click`, () => {
     // alert(`hi`)
 
-    const table = document.querySelector(`tbody`);
+    const table = document.querySelector(`.table`);
     const tr = document.createElement(`tr`);
     const td = document.createElement(`td`);
 

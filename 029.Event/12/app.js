@@ -15,6 +15,7 @@ btn.addEventListener(`click`, () => {
 
         array.push(input.value);
         div.innerHTML = array;
+        input.value = ``;
     }
     catch (error) {
         alert(error.message)
