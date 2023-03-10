@@ -14,6 +14,7 @@ document.querySelector(`.btn`).addEventListener(`click`, () => {
 
     tr.appendChild(td);
     table.appendChild(tr);
+    document.querySelector(`table`).appendChild(table);
 
 })
 
