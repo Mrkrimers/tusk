@@ -4,10 +4,10 @@
 
 
 const obj = {};
-const num = Math.round(Math.random() * 10);
 
-const doObj = (obj_, num_) => {
-    for (let i = 0; i <= num_; i++) {
+const doObj = (obj_,) => {
+    const num = Math.round(Math.random() * 10);
+    for (let i = 0; i <= num; i++) {
         obj_[i] = i;
     }
 }
@@ -15,7 +15,7 @@ const doObj = (obj_, num_) => {
 
 const isValid = () => {
     try {
-        doObj(obj, num);
+        doObj(obj);
         if (!Object.keys(obj).includes(`10`)) throw new Error(`NO`)
 
         return true

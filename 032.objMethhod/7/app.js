@@ -2,8 +2,8 @@
 // индекса и вычислить сумму.
 // 12345 
 
-const str = `12345`;
-console.log(str[0]);
+const str = `123`;
+// console.log(str[0]);
 
 function main(str_) {
     let count = 0;
@@ -15,3 +15,4 @@ function main(str_) {
 
 const result = main(str);
 console.log(result);
+

@@ -10,14 +10,23 @@ const doObj = (obj_) => {
     }
 }
 
-doObj(obj);
-console.log(obj);
+// console.log(obj);
 
 
-const findChetPairs = () => {
+const findChetValue = () => {
     try {
+        doObj(obj);
+        const trueValue = Object.keys(obj);
+        let array = [];
+        for (let i = 0; i < trueValue.length; i++) {
+            if (trueValue[i] % 2 == 0) {
+                array.push(trueValue[i]);
+            }
+        }
 
+        if (array.length == 0) throw new Error(`empty`)
 
+        return array;
 
     }
     catch (error) {
@@ -26,4 +35,20 @@ const findChetPairs = () => {
 }
 
 
-findChetPairs();
+const result = findChetValue();
+console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
